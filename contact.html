@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="./style/contact.css">
+    <link rel="icon" type="image/png" href="./img/logoLF.png">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="img-logo">
+                <img src="./img/logoLF.png" alt="">
+            </div>
+            <nav>
+                <a class="active" href="./index.html">Inicio</a>
+                <a href="./portfolio.html">Portfolio</a>
+                <a href="./contact.html">Contacto</a>
+            </nav>
+        </div>
+    </header>
+    <div class="formfather">    
+        <form class="form" action="https://formspree.io/f/mqknglen"
+        method="POST">
+            <div class="form-container">
+                <h2 class="form-title">Contáctame</h2>
+                <input type="text" class="form-input" placeholder="Nombre o Empresa:" name="name">
+                <input type="email" class="form-input" placeholder="Email:" name="email">
+                <textarea class="form-input form-input--message" placeholder="Mensaje:" name="message"></textarea>
+            
+                <input type="submit" value="Enviar" class="form-cta">
+            </div>
+        </form>
+    </div>  
+</body>

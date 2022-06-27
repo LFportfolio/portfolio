@@ -1,0 +1,617 @@
+/*///////// CONFIGURACIONES GLOBALES //////*/
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap');
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Comfortaa', cursive;
+    margin: 0;
+    background-color: rgb(5, 5, 56);
+}
+h1{ font-size: 3em;}
+p{ 
+    font-size: 1em;
+    color: #fff;
+}
+button{ 
+    background-color: aqua;
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 10px;
+    border: none;
+}
+button:hover{
+    background-color: #fff;
+    color: rgb(6, 6, 70);
+    cursor: pointer;
+}
+/*////////////////////////////////////////*/
+
+
+
+/*////////// HEADER NAV Y LOGO //////////*/
+nav .active{
+    color: rgb(255, 45, 45);
+}
+header{
+    background-color: rgb(255, 255, 255);
+}
+.container img{
+    width: 50px;
+}
+.container{
+    max-width: 1440px;
+    margin: auto;
+}
+header img{
+    margin: 0;
+    padding: 10px 10px;
+}
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 10px;
+}
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(6, 6, 70);
+}
+header a:hover{
+    background-color: aqua;
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+}
+/*/////////////////////////////////////*/
+
+
+
+/*////////// CONTENIDO DE INICIO //////////*/
+span{
+    color: rgb(255, 255, 255);
+}
+.cele1{
+    color: rgb(158, 230, 230);
+}
+.cele2{
+    color: rgb(158, 230, 230);
+}
+.yellow{
+    color: yellow;
+}
+.skills{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    margin-top: 20px;
+}
+.htmllogo{
+    margin-left: 34px;
+    margin-top: 10px;
+    width: 30px;
+}
+.csslogo{
+    margin-left: 20px;
+    margin-top: 11px;
+    width: 30px;
+}
+.jslogo{
+    margin-top: 6px;
+    width: 60px;
+}
+.nodelogo{
+    margin-left: 10px;
+    margin-top: 7px;
+    width: 50px;
+}
+.pythonlogo{
+    margin-left: 22px;
+    margin-top: 11px;
+    width: 30px;
+}
+.flasklogo{
+    margin-left: 20px;
+    margin-top: 8px;
+    width: 25px;
+}
+.djangologo{
+    margin-left: 5px;
+    margin-top: 8px;
+    width: 50px;
+}
+.gologo{
+    margin-left: 22px;
+    margin-top: 11px;
+    width: 20px;
+}
+#home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    max-width: 1400px;
+    margin: auto;
+}
+.fotocontent img{
+    width: 300px;
+    height: auto;
+}
+.info-content{
+    margin-bottom: 15px;
+}
+/*////////////////////////////////////////*/
+
+
+
+
+/*////////////// RESPONSIVE /////////////*/
+@media (min-width: 320px){
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    header nav{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    nav a{
+        margin-top: 15px;
+    }
+    #home{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+        height: 90vh;
+    }
+    h1{
+        font-size: 20px;
+    }
+    p{
+        font-size: 12px;
+    }
+    button{
+        font-size: 10px;
+        color: rgb(7, 7, 66);
+    }
+    .fotocontent img{
+        width: 150px;
+        height: auto;
+    }
+    body{
+        width: 100.5vw;
+        height: 100.5vh;
+    }
+    .htmllogo{
+        margin-left: 20px;
+        margin-top: 11px;
+        width: 22px;
+    }
+    .csslogo{
+        margin-left: 13px;
+        margin-top: 10px;
+        width: 22px;
+    }
+    .jslogo{
+        margin-top: 7px;
+        width: 40px;
+    }
+    .nodelogo{
+        margin-left: 6px;
+        margin-top: 7px;
+        width: 40px;
+    }
+    .pythonlogo{
+        margin-left: 15px;
+        margin-top: 11px;
+        width: 20px;
+    }
+    .flasklogo{
+        margin-left: 15px;
+        margin-top: 8px;
+        width: 16px;
+    }
+    .djangologo{
+        margin-left: 8px;
+        margin-top: 8px;
+        width: 40px;
+    }
+    .gologo{
+        margin-left: 15px;
+        margin-top: 11px;
+        width: 15px;
+    }
+    .skills{
+        margin-bottom: 20px;
+        margin-left: -12px;
+    }
+}
+
+@media (min-width: 375px){
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    header nav{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    #home{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+        height: 90vh;
+    }
+    h1{
+        font-size: 15px;
+    }
+    p{
+        font-size: 10px;
+    }
+    button{
+        font-size: 10px;
+        color: rgb(7, 7, 66);
+    }
+    .fotocontent img{
+        width: 200px;
+        height: auto;
+    }
+    body{
+        width: 100.5vw;
+        height: 100.5vh;
+    }
+    .htmllogo{
+        margin-left: 13px;
+        margin-top: 10px;
+        width: 25px;
+    }
+    .csslogo{
+        margin-left: 13px;
+        margin-top: 11px;
+        width: 25px;
+    }
+    .jslogo{
+        margin-top: 7px;
+        width: 48px;
+    }
+    .nodelogo{
+        margin-left: 6px;
+        margin-top: 7px;
+        width: 45px;
+    }
+    .pythonlogo{
+        margin-left: 15px;
+        margin-top: 11px;
+        width: 25px;
+    }
+    .flasklogo{
+        margin-left: 15px;
+        margin-top: 8px;
+        width: 20px;
+    }
+    .djangologo{
+        margin-left: 8px;
+        margin-top: 8px;
+        width: 50px;
+    }
+    .gologo{
+        margin-left: 15px;
+        margin-top: 11px;
+        width: 20px;
+    }
+}
+@media (min-width: 425px){
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    header nav{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    #home{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+        height: 90vh;
+    }
+    h1{
+        font-size: 15px;
+    }
+    p{
+        font-size: 10px;
+    }
+    button{
+        font-size: 10px;
+        color: rgb(7, 7, 66);
+    }
+    .fotocontent img{
+        width: 200px;
+        height: auto;
+    }
+    body{
+        width: 100.5vw;
+        height: 100.5vh;
+    }
+    .skills{
+        margin: 0;
+    }
+}
+@media (min-width: 720px){
+    .img-logo img{
+        width: 60px;
+    }
+    header img{
+        margin-top: 15px;
+    }
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    header nav{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-top: 42px;
+        font-size: 25px;
+    }
+}
+@media (min-width: 720px){
+    .img-logo img{
+        width: 60px;
+    }
+    header img{
+        margin-top: 15px;
+    }
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    header nav{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-top: 42px;
+        font-size: 25px;
+    }
+    button{
+        font-size: 15px;
+    }
+    #home{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        flex-direction: row;
+        height: 90vh;
+    }
+    .fotocontent img{
+        width: 200px;
+        height: auto;
+        margin-right: -2px;
+    }
+    .info-content{
+        padding: 0px 50px;
+        margin: auto;
+        text-align: initial;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    h1{
+        font-size: 20px;
+        margin: 0;
+    }
+    p{
+        font-size: 12px;
+    }
+    .skills{
+        margin-bottom: 20px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+    .htmllogo{
+        margin-left: 13px;
+        margin-top: 10px;
+        width: 25px;
+    }
+    .csslogo{
+        margin-left: 13px;
+        margin-top: 11px;
+        width: 25px;
+    }
+    .jslogo{
+        margin-top: 6px;
+        margin-left: 3px;
+        width: 45px;
+    }
+    .nodelogo{
+        margin-left: 6px;
+        margin-top: 7px;
+        width: 40px;
+    }
+    .pythonlogo{
+        margin-left: 15px;
+        margin-top: 10px;
+        width: 25px;
+    }
+    .flasklogo{
+        margin-left: 15px;
+        margin-top: 8px;
+        width: 20px;
+    }
+    .djangologo{
+        margin-left: 8px;
+        margin-top: 10px;
+        width: 40px;
+    }
+    .gologo{
+        margin-left: 15px;
+        margin-top: 11px;
+        width: 15px;
+    }
+    .skills{
+        margin-right: 150px;
+    }
+}
+
+@media (min-width: 768px){
+    header nav{
+        padding-right: 50px;
+    }
+    header img{
+        margin-left: 25px;
+    }
+    #home{
+        height: 70%;
+    }
+    h1{
+        font-size: 25px;
+    }
+    .htmllogo{
+        margin-left: 13px;
+        margin-top: 10px;
+        width: 25px;
+    }
+    .csslogo{
+        margin-left: 13px;
+        margin-top: 11px;
+        width: 25px;
+    }
+    .jslogo{
+        margin-left: 3px;
+        width: 45px;
+    }
+    .nodelogo{
+        margin-left: 6px;
+        margin-top: 7px;
+        width: 40px;
+    }
+    .pythonlogo{
+        margin-left: 15px;
+        margin-top: 11px;
+        width: 25px;
+    }
+    .flasklogo{
+        margin-left: 15px;
+        margin-top: 8px;
+        width: 20px;
+    }
+    .djangologo{
+        margin-left: 8px;
+        margin-top: 8px;
+        width: 40px;
+    }
+    .gologo{
+        margin-left: 15px;
+        margin-top: 11px;
+        width: 20px;
+    }
+    .fotocontent img{
+        width: auto;
+        height: 350px;
+    }
+}
+@media (min-width: 1024px){
+    .fotocontent img{
+        margin-right: 20px;
+    }
+    .skills{
+        margin-right: 100px;
+    }
+    p{
+        font-size: 15px;
+    }
+}
+@media (min-width: 1440px){
+    P{
+        font-size: 20PX;
+    }
+    h1{
+        font-size: 30px;
+    }
+}
+@media (min-width: 2560px){
+    .container{
+        max-width: 2000px;
+        margin: auto;
+    }
+    #home{
+        max-width: 2000px;
+        margin: auto;
+        margin-top: 100px;
+    }
+    h1{
+        font-size: 70px;
+    }
+    p{
+        font-size: 30px;
+    }
+    button{
+        font-size: 20px;
+    }
+    .fotocontent img{
+        width: 500px;
+        height: auto;
+    }
+    .htmllogo{
+        margin-left: 13px;
+        margin-top: 10px;
+        width: 50px;
+    }
+    
+    .csslogo{
+        margin-left: 13px;
+        margin-top: 11px;
+        width: 50px;
+    }
+    .jslogo{
+        margin-left: -3px;
+        width: 80px;
+    }
+    .nodelogo{
+        margin-left: 2px;
+        margin-top: 7px;
+        width: 70px;
+    }
+    .pythonlogo{
+        margin-left: 15px;
+        margin-top: 11px;
+        width: 50px;
+    }
+    .flasklogo{
+        margin-left: 15px;
+        margin-top: 8px;
+        width: 40px;
+    }
+    .djangologo{
+        margin-left: 8px;
+        margin-top: 8px;
+        width: 70px;
+    }
+    .gologo{
+        margin-left: 15px;
+        margin-top: 11px;
+        width: 40px;
+    }
+}
+/*////////////////////////////////////////*/

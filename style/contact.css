@@ -1,0 +1,337 @@
+/*///////// CONFIGURACIONES GLOBALES //////*/
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap');
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Comfortaa', cursive;
+    margin: 0;
+    background-color: rgb(5, 5, 56);
+}
+h1{ font-size: 3em;}
+p{ 
+    font-size: 1em;
+    color: #fff;
+}
+button{ 
+    background-color: aqua;
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 10px;
+    border: none;
+}
+button:hover{
+    background-color: #fff;
+    color: rgb(6, 6, 70);
+    cursor: pointer;
+}
+/*////////////////////////////////////////*/
+
+
+
+
+/*////////// HEADER NAV Y LOGO //////////*/
+nav .active{
+    color: rgb(255, 45, 45);
+}
+header{
+    background-color: rgb(255, 255, 255);
+}
+.container img{
+    width: 50px;
+}
+.container{
+    max-width: 1440px;
+    margin: auto;
+}
+header img{
+    margin: 0;
+    padding: 10px 10px;
+}
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 10px;
+}
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(6, 6, 70);
+}
+header a:hover{
+    background-color: aqua;
+    border-radius: 10px;
+    color: rgb(6, 6, 70);
+}
+/*/////////////////////////////////////*/
+
+
+
+
+
+/*//////////// FORMULARIO ///////////////*/
+.form{
+    background-color: rgb(201, 39, 39);
+    width: 500px;
+    height: 600px;
+    max-width: 400px;
+    border-radius: 1em;
+    padding: 3.5em 1.5em;
+}
+.formfather{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+}
+.form-container{
+    width: 100%;
+    display: grid;
+    gap: 1em;
+    grid-template-columns: 100%;
+}
+.form-container input{
+    margin-top: 13px;
+}
+.form-title{
+    color: rgb(17, 10, 88);
+    text-align: center;
+    font-size: 1.9rem;
+    margin-bottom: .4em;
+}
+
+.form-input{
+    font-family: inherit;
+    font-size: 1rem;
+    padding: .8em 1em;
+    outline: none;
+    border: none;
+    border-radius: 0.2em;
+}
+.form-input--message{
+    height: 200px;
+    resize: none;
+    padding: 1.8em 1em;
+    margin-top: 20px;
+}
+.form-cta{
+    font-family: inherit;
+    background-color: aqua;
+    color: rgb(14, 8, 64);
+    border: none;
+    font-size: 18px;
+    font-weight: 300;
+    padding: .7em 0;
+    border-radius: 15px;
+    cursor: pointer;
+    font-weight: 400;
+    margin-top: 15px;
+}
+
+.form-cta:hover{
+    background-color: #fff;
+}
+/*//////////////////////////////////////////////////*/
+
+
+
+
+
+/*//////////////// RESPONSIVE ////////////////*/
+@media (min-width: 320px){
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    header nav{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    nav a{
+        margin-top: 15px;
+    }
+    .formfather{
+        width: 100%;
+        height: 80vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+        margin: 0;
+    }
+    .form{
+        margin-top: 50px;
+        width: 80%;
+        height: 80%;
+    }
+    .form-title{
+        margin-bottom: 30px;
+        font-size: 20px;
+    }
+    .form-container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+        width: 210px;
+        height: 100%;
+    }
+    .form-input{
+        width: 100%;
+        font-size: 12px;
+        padding: .8em 1em;
+        outline: none;
+        border: none;
+        border-radius: 0.2em;
+    }
+    .form-input--message{
+        height: 100%;
+        resize: none;
+        padding: 1.8em 1em;
+        margin-top: 20px;
+    }
+    .form-cta{
+        width: 100px;
+        background-color: aqua;
+        color: rgb(14, 8, 64);
+        border: none;
+        font-size: 18px;
+        border-radius: 15px;
+        cursor: pointer;
+        margin-top: 15px;
+    }
+    
+    .form-cta:hover{
+        background-color: #fff;
+    }
+}
+@media (min-width: 375px){
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    header nav{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    } 
+    .form-container{
+        width: 250px;
+    }
+}
+@media (min-width: 425px){
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    header nav{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .form-container{
+        margin-left: 20px;
+        width: 250px;
+    }
+}
+@media (min-width: 720px){
+    .img-logo img{
+        width: 60px;
+    }
+    header img{
+        margin-top: 15px;
+    }
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    header nav{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-top: 42px;
+        font-size: 25px;
+    }
+    .form-container{
+        margin-left: 45px;
+    }
+}
+@media (min-width: 768px){
+    header nav{
+        padding-right: 50px;
+    }
+    header img{
+        margin-left: 25px;
+    }
+}
+@media (min-width: 2560px){
+    .container{
+        max-width: 2000px;
+        margin: auto;
+    }
+    .formfather{
+        width: 100%;
+        height: 700px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+        margin: 0;
+    }
+    .form{
+        margin-top: 50px;
+        width: 80%;
+        height: 600px;
+    }
+    .form-title{
+        margin-bottom: 30px;
+        font-size: 35px;
+    }
+    .form-container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+        width: 80%;
+        height: 100%;
+        margin-left: 35px;
+    }
+    .form-input{
+        width: 100%;
+        font-size: 20px;
+        padding: .8em 1em;
+        outline: none;
+        border: none;
+        border-radius: 0.2em;
+    }
+    .form-input--message{
+        height: 100%;
+        resize: none;
+        padding: 1.8em 1em;
+        margin-top: 20px;
+    }
+    .form-cta{
+        width: 200px;
+        background-color: aqua;
+        color: rgb(14, 8, 64);
+        border: none;
+        font-size: 25px;
+        border-radius: 15px;
+        cursor: pointer;
+        margin-top: 15px;
+    }
+}
+/*////////////////////////////////////////////*/
